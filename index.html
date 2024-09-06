@@ -3,15 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Odin Recipes</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 class="title">odin-recipes</h1>
-    <ul>
-        <li><a href="recipes/steakmarsala.html"class="link">Steak Marsala</a></li>
-        <li><a href="recipes/Chickencacciatore.html"class="link">Chicken Cacciatore</a></li>
-        <li><a href="recipes/tomatosoup.html"class="link">Tomato Soup</a></li>
-    </ul>
+    <header>
+        <h1 class="title">Odin Recipes</h1>
+    </header>
+
+    <main>
+        <section class="recipes">
+            <h2>Featured Recipes</h2>
+            <ul class="recipe-links">
+                <li><a href="recipes/steakmarsala.html" class="link">Steak Marsala</a></li>
+                <li><a href="recipes/Chickencacciatore.html" class="link">Chicken Cacciatore</a></li>
+                <li><a href="recipes/tomatosoup.html" class="link">Tomato Soup</a></li>
+            </ul>
+        </section>
+
+        <section class="random-recipe">
+            <h2>Random Recipe of the Day</h2>
+            <button id="randomRecipeButton">Get Random Recipe</button>
+            <div id="randomRecipeContainer"></div>
+        </section>
+    </main>
+
+    <aside class="food-gallery">
+        <h2>Food Gallery</h2>
+        <div class="gallery" id="foodGallery">
+            <img src="https://via.placeholder.com/150/food1.jpg" alt="Food Image 1" loading="lazy">
+            <img src="https://via.placeholder.com/150/food2.jpg" alt="Food Image 2" loading="lazy">
+            <img src="https://via.placeholder.com/150/food3.jpg" alt="Food Image 3" loading="lazy">
+            <img src="https://via.placeholder.com/150/food4.jpg" alt="Food Image 4" loading="lazy">
+        </div>
+    </aside>
+
+    <footer>
+        <p>© 2024 Odin Recipes</p>
+    </footer>
+
+    <script src="randomrecipe.js"></script>
+    <script src="foodgallery.js"></script>
 </body>
 </html>
+
+
+
